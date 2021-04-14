@@ -8,20 +8,29 @@ body {
     margin: 0;
     border: 0;
     list-style: none;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width:620px) {
+    .part1,
+    .part2,
+    .part3,
+    .part4,
+    .part5,
+    .part6,
+    .name {
+        width: 100%;
+    }
 }
 
 a {
     text-decoration: none;
 }
 
-.menubar {
-    width: 2100px;
-}
-
 ul.menu {
-    width: 2100px;
     background: #29627cc7;
     height: 70px;
+    overflow: hidden;
 }
 
 ul.menu>li {
@@ -40,15 +49,11 @@ ul.menu>li>a {
 }
 
 .part1 {
-    width: 2100px;
-    height: 800px;
     margin-top: 30px;
 }
 
 .name {
     padding: 450px 50px 50px;
-    width: 1200px;
-    height: 180px;
     margin-left: 700px;
     font-family: serif;
     background-color: rgba(247, 206, 25, 0.158);
@@ -65,21 +70,15 @@ ul.menu>li>a {
 
 .part2 {
     background-color: #29627c81;
-    width: 2100px;
-    height: 430px;
     margin-top: 50px;
 }
 
 .part3 {
-    width: 2100px;
-    height: 400px;
     margin-top: 30px;
 }
 
 .part4 {
     background-color: #29627c81;
-    width: 2100px;
-    height: 600px;
     margin-top: 50px;
 }
 
@@ -116,12 +115,6 @@ ul.menu>li>a {
     font-size: 25px;
 }
 
-.part5 {
-    width: 2100px;
-    height: 400px;
-    margin-top: 50px;
-}
-
 .part5 h1 {
     text-align: center;
     padding: 35px;
@@ -129,18 +122,13 @@ ul.menu>li>a {
 }
 
 .part5 ul li {
+    text-align: center;
     display: block;
-    font-size: 25px;
-}
-
-.part51 {
-    float: left;
-    margin-left: 290px;
+    font-size: 20px;
 }
 
 .part6 {
     background-color: #29627c81;
-    width: 2100px;
     height: 350px;
     margin-top: 30px;
 }
