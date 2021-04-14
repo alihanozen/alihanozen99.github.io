@@ -1,0 +1,185 @@
+body {
+    font-family: serif;
+    background: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menubar {
+    width: 2100px;
+}
+
+ul.menu {
+    width: 2100px;
+    background: #29627cc7;
+    height: 70px;
+}
+
+ul.menu>li {
+    float: left;
+    position: relative;
+}
+
+ul.menu>li>a {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 25px;
+    line-height: 50px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+.part1 {
+    width: 2100px;
+    height: 800px;
+    margin-top: 30px;
+}
+
+.name {
+    padding: 450px 50px 50px;
+    width: 1200px;
+    height: 180px;
+    margin-left: 700px;
+    font-family: serif;
+    background-color: rgba(247, 206, 25, 0.158);
+}
+
+.name p {
+    font-size: 150px;
+    color: #267397;
+    text-indent: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+    background-color: rgba(211, 211, 211, 0.89);
+}
+
+.part2 {
+    background-color: #29627c81;
+    width: 2100px;
+    height: 430px;
+    margin-top: 50px;
+}
+
+.part3 {
+    width: 2100px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.part4 {
+    background-color: #29627c81;
+    width: 2100px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+.part2 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part2 ul li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.part3 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part3 ul li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.part4 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part4 ul li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.part5 {
+    width: 2100px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.part5 h1 {
+    text-align: center;
+    padding: 35px;
+    text-decoration: underline;
+}
+
+.part5 ul li {
+    display: block;
+    font-size: 25px;
+}
+
+.part51 {
+    float: left;
+    margin-left: 290px;
+}
+
+.part6 {
+    background-color: #29627c81;
+    width: 2100px;
+    height: 350px;
+    margin-top: 30px;
+}
+
+.part6 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part6 ul li {
+    text-align: center;
+    font-size: 30px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
