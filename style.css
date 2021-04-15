@@ -11,7 +11,7 @@ body {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:600px) {
     .part1,
     .part2,
     .part3,
@@ -28,8 +28,8 @@ a {
 
 ul.menu {
     background: #29627cc7;
-    height: 70px;
     overflow: auto;
+    width: 100%;
 }
 
 ul.menu>li {
@@ -43,8 +43,13 @@ ul.menu>li>a {
     color: #fff;
     padding: 10px 25px;
     line-height: 50px;
-    border-right: 1px solid rgba(0, 0, 0, .1);
-    border-left: 1px solid rgba(0, 0, 0, .1);
+}
+
+@media screen and (max-width: 500px) {
+    ul.menu>li>a {
+        float: none;
+        display: block;
+    }
 }
 
 .part1 {
