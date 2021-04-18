@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5x5.css" />
+    <title>Alihan Özen/Color Game</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>COLOR GAME</h1>
+        <span id="correct"></span>
+        <button id="start" onclick="startGame(); changecolor();">Start</button>
+        <button id="square0" class="sqr"></button>
+    </div>
+    <div id="container">
+        <button id="square1" class="square" onclick="changecolor(); myFunction('square1');"></button>
+        <button id="square2" class="square" onclick="changecolor(); myFunction('square2');"></button>
+        <button id="square3" class="square" onclick="changecolor(); myFunction('square3');"></button>
+        <button id="square4" class="square" onclick="changecolor(); myFunction('square4');"></button>
+        <button id="square5" class="square" onclick="changecolor(); myFunction('square5');"></button>
+    </div>
+    <div id="container">
+        <button id="square6" class="square" onclick="changecolor(); myFunction('square6');"></button>
+        <button id="square7" class="square" onclick="changecolor(); myFunction('square7');"></button>
+        <button id="square8" class="square" onclick="changecolor(); myFunction('square8');"></button>
+        <button id="square9" class="square" onclick="changecolor(); myFunction('square9');"></button>
+        <button id="square10" class="square" onclick="changecolor(); myFunction('square10');"></button>
+    </div>
+    <div id="container">
+        <button id="square11" class="square" onclick="changecolor(); myFunction('square11');"></button>
+        <button id="square12" class="square" onclick="changecolor(); myFunction('square12');"></button>
+        <button id="square13" class="square" onclick="changecolor(); myFunction('square13');"></button>
+        <button id="square14" class="square" onclick="changecolor(); myFunction('square14');"></button>
+        <button id="square15" class="square" onclick="changecolor(); myFunction('square15');"></button>
+    </div>
+    <div id="container">
+        <button id="square16" class="square" onclick="changecolor(); myFunction('square16');"></button>
+        <button id="square17" class="square" onclick="changecolor(); myFunction('square17');"></button>
+        <button id="square18" class="square" onclick="changecolor(); myFunction('square18');"></button>
+        <button id="square19" class="square" onclick="changecolor(); myFunction('square19');"></button>
+        <button id="square20" class="square" onclick="changecolor(); myFunction('square20');"></button>
+    </div>
+    <div id="container">
+        <button id="square21" class="square" onclick="changecolor(); myFunction('square21');"></button>
+        <button id="square22" class="square" onclick="changecolor(); myFunction('square22');"></button>
+        <button id="square23" class="square" onclick="changecolor(); myFunction('square23');"></button>
+        <button id="square24" class="square" onclick="changecolor(); myFunction('square24');"></button>
+        <button id="square25" class="square" onclick="changecolor(); myFunction('square25');"></button>
+    </div>
+
+    <span id="time"></span>
+</body>
+<script>
+    var colors = ["blue", "red", "green", "yellow", "cyan", "cadetblue", "purple", "brown", "darkblue",
+        "deeppink", "dimgray", "gray", "skyblue", "olivedrab", "pink", "orange",
+        "tan", "black", "darkgoldenrod", "darkkhaki", "mistyrose", "lightcyan", "olive", "mediumorchid", "tomato",
+        "blue", "red", "green", "yellow", "cyan", "cadetblue", "purple", "brown", "darkblue",
+        "deeppink", "dimgray", "gray", "skyblue", "olivedrab", "pink", "orange",
+        "tan", "black", "darkgoldenrod", "darkkhaki", "mistyrose", "lightcyan", "olive", "mediumorchid", "tomato"
+    ];
+
+    function changecolor() {
+
+        var rastgele = Math.floor(Math.random() * 25);
+        var rastgele9 = Math.floor(Math.random() * 25);
+
+        document.getElementById("square0").style.backgroundColor = colors[rastgele9];
+        document.getElementById("square1").style.backgroundColor = colors[rastgele + 1];
+        document.getElementById("square2").style.backgroundColor = colors[rastgele + 2];
+        document.getElementById("square3").style.backgroundColor = colors[rastgele + 3];
+        document.getElementById("square4").style.backgroundColor = colors[rastgele + 4];
+        document.getElementById("square5").style.backgroundColor = colors[rastgele + 5];
+        document.getElementById("square6").style.backgroundColor = colors[rastgele + 6];
+        document.getElementById("square7").style.backgroundColor = colors[rastgele + 7];
+        document.getElementById("square8").style.backgroundColor = colors[rastgele + 8];
+        document.getElementById("square9").style.backgroundColor = colors[rastgele + 9];
+        document.getElementById("square10").style.backgroundColor = colors[rastgele + 10];
+        document.getElementById("square11").style.backgroundColor = colors[rastgele + 11];
+        document.getElementById("square12").style.backgroundColor = colors[rastgele + 12];
+        document.getElementById("square13").style.backgroundColor = colors[rastgele + 13];
+        document.getElementById("square14").style.backgroundColor = colors[rastgele + 14];
+        document.getElementById("square15").style.backgroundColor = colors[rastgele + 15];
+        document.getElementById("square16").style.backgroundColor = colors[rastgele + 16];
+        document.getElementById("square17").style.backgroundColor = colors[rastgele + 17];
+        document.getElementById("square18").style.backgroundColor = colors[rastgele + 18];
+        document.getElementById("square19").style.backgroundColor = colors[rastgele + 19];
+        document.getElementById("square20").style.backgroundColor = colors[rastgele + 20];
+        document.getElementById("square21").style.backgroundColor = colors[rastgele + 21];
+        document.getElementById("square22").style.backgroundColor = colors[rastgele + 22];
+        document.getElementById("square23").style.backgroundColor = colors[rastgele + 23];
+        document.getElementById("square24").style.backgroundColor = colors[rastgele + 24];
+        document.getElementById("square25").style.backgroundColor = colors[rastgele + 25];
+    }
+</script>
+<script src="script.js" charset="utf-8"></script>
+
+</html>
