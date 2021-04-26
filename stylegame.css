@@ -11,16 +11,16 @@ body {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width:300px) {
+@media only screen and (max-width:600px) {
     .buttons,
     .header,
     .bottom {
-        width: 70%;
+        width: 100%;
     }
 }
 
 .header {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .header h1 {
@@ -36,10 +36,9 @@ body {
 }
 
 .buttons {
-    position: relative;
-    margin: auto;
-    margin-top: 40px;
-    width: 630px;
+    margin-top: 50px;
+    margin: 0 auto;
+    display: table;
 }
 
 .button1 {
@@ -53,7 +52,6 @@ body {
     font-size: 50px;
     margin: 4px 2px;
     cursor: pointer;
-    float: left;
     margin-left: 50px;
 }
 
@@ -68,7 +66,6 @@ body {
     font-size: 50px;
     margin: 4px 2px;
     cursor: pointer;
-    float: left;
     margin-left: 50px;
 }
 
@@ -83,15 +80,13 @@ body {
     font-size: 50px;
     margin: 4px 2px;
     cursor: pointer;
-    float: left;
     margin-left: 50px;
 }
 
 .bottom {
     background-color: #29627c81;
     height: 30px;
-    margin-top: 250px;
-    margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 .bottom ul li {
