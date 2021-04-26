@@ -1,0 +1,168 @@
+body {
+    font-family: serif;
+    background: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width:600px) {
+    .part1,
+    .part2,
+    .part3,
+    .part4,
+    .part5,
+    .part6 {
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.menu {
+    background: #29627cc7;
+    overflow: auto;
+    width: 100%;
+}
+
+ul.menu>li {
+    float: left;
+    position: relative;
+}
+
+ul.menu>li>a {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 25px;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    ul.menu>li>a {
+        float: none;
+        display: block;
+    }
+}
+
+.part1 {
+    margin-top: 30px;
+}
+
+.part1 p {
+    padding: 450px 50px 50px;
+    font-size: 70px;
+    color: #267397;
+    letter-spacing: 3px;
+}
+
+.part2 {
+    background-color: #29627c81;
+    margin-top: 50px;
+}
+
+.part3 {
+    margin-top: 30px;
+}
+
+.part4 {
+    background-color: #29627c81;
+    margin-top: 50px;
+}
+
+.part2 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part2 ul li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.part3 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part3 ul li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.part4 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part4 ul li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.part5 h1 {
+    text-align: center;
+    padding: 35px;
+    text-decoration: underline;
+}
+
+.part5 ul li {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+.part6 {
+    background-color: #29627c81;
+    height: 350px;
+    margin-top: 30px;
+}
+
+.part6 h1 {
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+.part6 ul li {
+    text-align: center;
+    font-size: 25px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
