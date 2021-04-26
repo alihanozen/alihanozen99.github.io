@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3x3.css" />
+    <title>Alihan Özen/Color Game</title>
+</head>
+
+<body>
+    <audio id="audioTrue" src="https://www.soundjay.com/button/sounds/button-3.mp3" autoplay="false"></audio>
+    <audio id="audioFalse" src="https://www.soundjay.com/button/sounds/button-13.mp3" autoplay="false"></audio>
+    <div class="header">
+        <h1>COLOR GAME</h1>
+        <p><mark>Click on the box of the same color as the top box.</mark></p>
+        <span id="correct"></span>
+        <button id="start" class="start" onclick="startGame(); changecolor();">Start</button>
+        <button id="square0" class="sqr"></button>
+    </div>
+    <div id="boxes">
+        <div id="container">
+            <button id="square1" class="square" onclick="changecolor(); myFunction('square1');"></button>
+            <button id="square2" class="square" onclick="changecolor(); myFunction('square2');"></button>
+            <button id="square3" class="square" onclick="changecolor(); myFunction('square3');"></button>
+        </div>
+        <div id="container">
+            <button id="square4" class="square" onclick="changecolor(); myFunction('square4');"></button>
+            <button id="square5" class="square" onclick="changecolor(); myFunction('square5');"></button>
+            <button id="square6" class="square" onclick="changecolor(); myFunction('square6');"></button>
+        </div>
+        <div id="container">
+            <button id="square7" class="square" onclick="changecolor(); myFunction('square7');"></button>
+            <button id="square8" class="square" onclick="changecolor(); myFunction('square8');"></button>
+            <button id="square9" class="square" onclick="changecolor(); myFunction('square9');"></button>
+        </div>
+    </div>
+    <span id="time"></span>
+</body>
+<script>
+    var colors = ["blue", "red", "green", "yellow", "cyan", "cadetblue", "purple", "brown", "darkblue", "blue", "red", "green", "yellow", "cyan", "cadetblue", "purple", "brown", "darkblue"];
+
+    function changecolor() {
+
+        var rastgele = Math.floor(Math.random() * 9);
+        var rastgele9 = Math.floor(Math.random() * 9);
+
+        document.getElementById("square0").style.backgroundColor = colors[rastgele9];
+        document.getElementById("square1").style.backgroundColor = colors[rastgele + 1];
+        document.getElementById("square2").style.backgroundColor = colors[rastgele + 2];
+        document.getElementById("square3").style.backgroundColor = colors[rastgele + 3];
+        document.getElementById("square4").style.backgroundColor = colors[rastgele + 4];
+        document.getElementById("square5").style.backgroundColor = colors[rastgele + 5];
+        document.getElementById("square6").style.backgroundColor = colors[rastgele + 6];
+        document.getElementById("square7").style.backgroundColor = colors[rastgele + 7];
+        document.getElementById("square8").style.backgroundColor = colors[rastgele + 8];
+        document.getElementById("square9").style.backgroundColor = colors[rastgele + 9];
+    }
+</script>
+<script src="script.js" charset="utf-8"></script>
+
+</html>
