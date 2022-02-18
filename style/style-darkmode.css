@@ -14,10 +14,13 @@ html {
 
 .navbar {
     margin-bottom: 0;
+    background-image: url("../img/bg.jpg");
+    margin: 0 auto;
+    border: 0
 }
 
 .navbar ul li a {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .bg-image {
