@@ -67,92 +67,6 @@ h6 {
     opacity: 1;
 }
 
-
-/*--------------------------------------------------------------
-# Hobbies
---------------------------------------------------------------*/
-
-.ct-box-slider {
-    margin-right: -15px;
-}
-
-@media (max-width: 991px) {
-    .ct-box-slider {
-        margin-left: -15px;
-    }
-}
-
-.ct-box-slider__arrows .slick-arrow {
-    padding: 0 1px 0 0;
-    opacity: 0.3;
-}
-
-.ct-box-slider__arrows .slick-arrow:hover {
-    opacity: 0.5;
-}
-
-.ct-box-slider__arrows .slick-arrow:hover:active {
-    opacity: 0.55;
-}
-
-.ct-box {
-    font-family: 'stenciletta-solid', sans-serif;
-    font-size: 18px;
-    line-height: 1.15;
-    padding: 15px 0;
-    display: block;
-    color: rgb(255, 255, 255);
-}
-
-.ct-box .hover {
-    display: none;
-}
-
-.ct-box span {
-    padding-top: 15px;
-    display: block;
-    max-width: 100%;
-}
-
-.ct-box .inner {
-    background: #13393b79;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-    padding: 15px 20px;
-    height: 120px;
-    cursor: pointer;
-}
-
-.ct-box .inner .fa {
-    font-size: 64px;
-}
-
-@media (max-width: 479px) {
-    .ct-box {
-        font-size: 18px;
-    }
-    .ct-box img {
-        max-width: 50%;
-    }
-    .ct-box .inner {
-        height: 150px;
-        padding: 10px;
-    }
-}
-
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -746,3 +660,54 @@ section {
         padding-right: 20px 15px;
     }
 }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  .basicBox {
+    width: 130px;
+    height: 65px;
+    margin: 15px auto;
+    color: #4274D3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.00rem;
+    line-height: 65px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  svg rect, svg path, svg polyline {
+    fill: none;
+    stroke: #4274D3;
+    stroke-width: 2;
+  }
+  
+  .basicBox:hover svg rect, .swiggleBox:hover svg path, .checkBox:hover svg polyline {
+    stroke: #4274D3;
+  }
+  
+  /* Basic Box */
+  svg rect {
+    stroke-dasharray: 400, 0;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+  }
+  .basicBox:hover svg rect {
+    stroke-width: 3;
+    stroke-dasharray: 35, 245;
+    stroke-dashoffset: 38;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+  }

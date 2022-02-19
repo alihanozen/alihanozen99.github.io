@@ -14,7 +14,7 @@ html {
 
 .navbar {
     margin-bottom: 0;
-    background-image: url("../img/bg.jpg");
+    background-color: transparent;
     margin: 0 auto;
     border: 0
 }
